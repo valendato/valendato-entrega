@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--link from Bootstrap-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--my own link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!--link from js from Bootstrap-->
+</head>
+
+<body>
+
+  <!--modal de contact-->
+  <div class="modal fade" id="myModal" index="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Contact me</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+
+          <label for="userName" class="form-label">First & Last Name</label>  
+          <input id="userName" required class="form-control" type="text" pattern="[a-zA-Z]{2,30}" placeholder="Your Name">
+                   
+          <label for="userEmail" class="form-label">Email</label>
+          <input id="userEmail" required placeholder="yourEmail@yourdomain.com" type="email" id="userEmail" class="form-control">
+
+
+          <button class="btn btn-success mt-3">Subscribe</button>
+
+          </form>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div> <!--modal-->
+
+  <!--barra de navegación-->
+  <nav class="navbar navbar-expand-md ">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html"> 
+      <img class="d-inline-block align-text-top" src="images/logo.svg" alt="Logo" width="30" height="24"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav  ms-auto ">
+          <li class="nav-item">
+            <a id="home" class="nav-link active" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="contact" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--header-->
+  <header class="container-fluid text-white">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-md-4 col-lg-5">
+
+        <h1> hi.  im valen, <br> and i do things </h1>
+
+        <p> i'm finishing desing school this year and i don't really know what i'm gonna do in the future, but i know i'm very passionate about what i do.</p>
+
+        <a class="text-dark text-decoration-none bg-white text-center"
+          href="mailto:valendato@gmail.com?subject=Contact%20me%20&body=Hi!%20i%20am%20intrested%20in%20your%20work">Email</a>
+
+      </div>
+
+      <div class="yqc col-md-5 col-lg-5">
+
+        <img src="images/yqc.jpg" class="w-100 img-fluid" alt="yqc">
+        
+
+      </div>
+    </div>
+
+  </header>
+
+  <!--main-->
+  <main class="container-fluid">
+
+    <!--sección link de IG-->
+    <section class="container-fluid mb-5">
+
+      <div class="row justify-content-center text-center align-items-center">
+
+        <div class="col-md-4 pt-5">
+          <h2>i dont have all my work here!</h2>
+
+          <p>you can check my IG if you want to know me and my work a little more</p>
+
+          <a class="btn btn-dark"
+          href="https://www.instagram.com/sat0____/" target="_blank">Instagram</a>
+        </div>
+
+      </div>
+
+    <!--carrousel de fotos-->
+    </section> <!--first section-->
+    <section class="container-fluid">
+      <div class="container-fluid pt-1">
+        <div id="myCarousel" class="carousel slide  carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <img src="images/foto-1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>DESARRAIGADO</h5>
+                <p>Informative scroll about the Japanese car culture</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/foto-2.svg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>SHIRT DESIGN</h5>
+                <p>I like cars, so i made a shirt with this print </p>
+              </div>
+            </div>
+
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/foto-3.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>VIDEO JOCKEY</h5>
+                <p>I made visuals for "1982" by miss kitten and the hacker</p>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#MyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--sección 2-->
+    <section id="seccion2" class="p-5">
+      <div class="row justify-content-between align-items-center">
+          
+          <div class="cara col-md-5 col-lg-5">
+
+          <img id="imagen2" src="images/nose byn.png" class="w-100 img-fluid" alt="cara">
+          
+          </div>
+
+          <div id="bloque3" class="col-md-4 col-lg-5">
+  
+          <h1> As you have seen from the carrousel, i like cars</h1>
+          
+          <p> Since i was a little kiddo, the only thing i talked about was cars. To this day i still in love with cars, and they are the reason i'm intrested in design. </p>
+   
+          </div>
+          
+      </div>
+    </section>
+      
+  </main>
+
+  <!--footer-->
+  <footer id="footer" class="container-fluid text-center m-5">
+    <p> I don't have copyright, but please don't steal my work ;)</p>
+
+
+  </footer>
+
+
+</body>
+
+</html>
